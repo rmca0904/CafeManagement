@@ -1,3 +1,5 @@
+package CafeManagementSystem_2;
+
 public class Main {
     public static void main(String[] args) {
         CafeManager cafeManager = new CafeManager();
@@ -16,5 +18,16 @@ public class Main {
         // Undo again
         cafeManager.undoLastAction();
         cafeManager.undoLastAction(); // Trying to undo more actions than performed
+
+        // Create a CafeManager instance
+        CafeManagementSystem cafeManagementSystem = new CafeManagementSystem();
+
+        // Add customers
+        cafeManagementSystem.addCustomer(101, "Alice");
+        cafeManagementSystem.addCustomer(102, "Bob");
+        cafeManagementSystem.addCustomer(103, "Charlie");
+
+        // Find a customer
+        cafeManagementSystem.findCustomer(102);
     }
 }

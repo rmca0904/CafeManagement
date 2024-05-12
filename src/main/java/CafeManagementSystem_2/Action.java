@@ -1,3 +1,4 @@
+package CafeManagementSystem_2;
 import java.util.Stack;
 
 // Define a class to represent an action
@@ -13,7 +14,7 @@ class Action {
     }
 }
 
-// CafeManager class with undo functionality
+// CafeManagementSystem class with undo functionality
 class CafeManager {
     private Stack<Action> actionStack;
 
